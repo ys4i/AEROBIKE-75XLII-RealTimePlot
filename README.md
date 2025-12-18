@@ -44,6 +44,22 @@ bike-realtime-plot
 
 4. The application will start retrieving data and display it in real-time.
 
+### Mock mode (no aerobike device)
+
+If you don't have the aerobike connected, you can run a synthetic data mode to verify the app flow and SQLite writes:
+
+```
+python src/main.py --mock
+```
+
+Quick, headless smoke check (runs for 5 seconds):
+
+```
+python src/main.py --mock --duration 5 --no-plot --no-wait
+```
+
+This creates `aerodb.sqlite` in the project root (schema: `schema.sql`).
+
 ## Dependencies
 
 - Python 3.x

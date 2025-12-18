@@ -114,3 +114,7 @@ $RECYCLE.BIN/
 # Python specific ignores
 *.pyc
 src/__pycache__/
+
+# SQLite (runtime outputs)
+aerodb.sqlite
+aerodb.sqlite-*
